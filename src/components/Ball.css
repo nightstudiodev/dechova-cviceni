@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  transition: transform 4s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.ball.nádech {
+  transform: scale(1.5);
+  transition: transform 4s ease-in-out;
+}
+
+.ball.zadržení {
+  transform: scale(1.5);
+  transition: transform 7s ease-in-out;
+}
+
+.ball.výdech {
+  transform: scale(1);
+  transition: transform 8s ease-in-out;
+}
+
+.ball.stop {
+  transform: scale(1);
+  transition: transform 2s ease-in-out;
+}
+
+.text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
